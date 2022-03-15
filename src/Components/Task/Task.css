@@ -1,0 +1,27 @@
+.task-container{
+    width: 90%;
+    height: 10vh;
+    background-color: azure;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 5px;
+    position: relative;
+    align-self: center;
+}
+
+.task-container-header{
+    height: 40px;
+}
+
+.task-container-title{
+    display: inline;
+    color:black;
+    text-align: left;
+    float:left
+}
+.item-container{
+    display:flex;
+    flex-direction:column;
+    margin-top: 5px;
+    align-self: center;
+}
