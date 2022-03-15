@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Task level='0'></Task>
+        <Task level={0}></Task>
       </header>
     </div>
   );
