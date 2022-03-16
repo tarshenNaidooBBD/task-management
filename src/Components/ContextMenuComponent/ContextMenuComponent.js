@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
-import Task from '../Task/Task';
-import './ContextMenu.css';
+import TaskComponent from '../TaskComponent/TaskComponent';
+import './ContextMenuComponent.css';
 
 class ContextMenu extends React.Component {
     render (){
@@ -14,6 +14,7 @@ class ContextMenu extends React.Component {
     }
 
     toggleMenu = () => {
+
         const contextMenu = document.getElementById("menu-".concat(this.props.level).concat(this.props.index));
         if (contextMenu.style.visibility === "visible"){
             contextMenu.style.visibility = "hidden";
@@ -34,7 +35,7 @@ class ContextMenu extends React.Component {
         const currentItemContainer = document.getElementById("item-container-level-".concat(this.props.level));
         //const parentTask= document.getElementById("parent-item-container-".concat(this.props.level));
         //console.log(currentItemContainer.children.length);
-        const newTask = new Task({level :this.props.level+1, index: currentItemContainer.children.length});
+        const newTask = new TaskComponent({level :this.props.level+1, index: currentItemContainer.children.length});
         //ReactDOM.render(newTask.render(), currentItemContainer);
         ReactDOM.render(ReactDOM.createPortal(newTask.render(), currentItemContainer), document.createElement('div'));
     }

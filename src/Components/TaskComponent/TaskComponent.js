@@ -1,9 +1,9 @@
 import React from 'react';
-import './Task.css';
-import '../ContextMenu/ContextMenu';
-import ContextMenu from '../ContextMenu/ContextMenu';
+import './TaskComponent.css';
+import '../ContextMenuComponent/ContextMenuComponent';
+import ContextMenuComponent from '../ContextMenuComponent/ContextMenuComponent';
 
-class Task extends React.Component {
+class TaskComponent extends React.Component {
 
     id = "";
     title = "";
@@ -15,7 +15,7 @@ class Task extends React.Component {
         return <div class="task-container" id={"task-container-".concat(this.props.level).concat(this.props.index)}>
             <span class="task-container-header">
                 <div class="task-container-title">Hey there</div>
-                <ContextMenu level={this.props.level} index={this.props.index}></ContextMenu>
+                <ContextMenuComponent level={this.props.level} index={this.props.index}></ContextMenuComponent>
             </span>
             <br></br>
             <div class="item-container" id={"item-container-level-".concat(this.props.level)} children="0"></div>
@@ -26,4 +26,4 @@ class Task extends React.Component {
     
 }
 
-export default Task;
+export default TaskComponent;
