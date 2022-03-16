@@ -2,14 +2,9 @@ import React from 'react';
 import './TaskComponent.css';
 import '../ContextMenuComponent/ContextMenuComponent';
 import ContextMenuComponent from '../ContextMenuComponent/ContextMenuComponent';
+import Task from '../../Objects/Task';
 
 class TaskComponent extends React.Component {
-
-    id = "";
-    title = "";
-    status = false;
-    tasks = [];
-    duedate = "";
 
     render (){
         return <div class="task-container" id={"task-container-".concat(this.props.level).concat(this.props.index)}>
