@@ -23,8 +23,13 @@ function App() {
   );
   */
   <Router>
-    <div id="AppRouteDiv">
-      <img src={logo} alt="App Icon" width="100" height="100"></img>
+    <div id="AppRouteDiv" style={{"margin-left":'50px',"margin-top":'50px'}}>
+      <span>
+        <img src={logo} alt="App Icon" width="100" height="100" style={{display:'inline'}}>
+          
+        </img>
+        <h1 style={{display:'inline'}}>Task Management System</h1>
+      </span>
       <div className="AppRouterDiv">
           <ul>
               <li>
