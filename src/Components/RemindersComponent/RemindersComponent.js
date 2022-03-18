@@ -3,7 +3,7 @@ import HeaderComponent from '../HeaderComponent/HeaderComponent';
 
 class RemindersComponent extends React.Component {
     render () {
-        return <HeaderComponent titleText="Reminders Page"/>
+        return <HeaderComponent titleText="Reminders"/>
     }
 }
 
