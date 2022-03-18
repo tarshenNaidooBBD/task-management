@@ -1,8 +1,9 @@
 import React from 'react'
+import HeaderComponent from '../HeaderComponent/HeaderComponent';
 
 class EditComponent extends React.Component {
     render () {
-        return;
+        return <HeaderComponent titleText="Edit Task Page"/>
     }
 }
 

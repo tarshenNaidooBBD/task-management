@@ -5,7 +5,7 @@ import {
     Route,
     Link
 } from 'react-router-dom';
-import TaskComponent from './Components/TaskComponent/TaskComponent';
+import logo from './images/appIcon.ico'
 import RouteNotFound from './Components/RouteNotFoundComponent/RouteNotFoundComponent';
 import EditComponent from './Components/EditComponent/EditComponent';
 import HomeComponent from './Components/HomeComponent/HomeComponent';
@@ -24,7 +24,8 @@ function App() {
   */
   <Router>
     <div id="AppRouteDiv" style={{"margin-left":'50px',"margin-top":'50px'}}>
-      <HeaderComponent color="#444444"></HeaderComponent>
+      <img src={logo} alt="App Icon" width="100" height="100" style={{display:'inline'}}></img>
+      <HeaderComponent titleText="Task Management System"></HeaderComponent>
       <div className="AppRouterDiv">
           <ul>
               <li>

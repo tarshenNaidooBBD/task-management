@@ -1,9 +1,10 @@
 import React from 'react';
+import HeaderComponent from '../HeaderComponent/HeaderComponent';
 
 class RouteNotFound extends React.Component {
 
     render() {
-        return <div>Error 404 Page not found!</div>
+        return <HeaderComponent titleText="Error! Page not found"/>
     }
 }
 
