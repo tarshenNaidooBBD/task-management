@@ -9,7 +9,7 @@ class HeaderComponent extends React.Component {
                 <img src={logo} alt="App Icon" width="100" height="100" style={{display:'inline'}}>
                 
                 </img>
-                <h1 style={{display:'inline'}}>Task Management System</h1>
+                <h1 style={{display:'inline', color:this.props.color}}>Task Management System</h1>
             </span>
         );
     }

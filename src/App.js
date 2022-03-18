@@ -24,7 +24,7 @@ function App() {
   */
   <Router>
     <div id="AppRouteDiv" style={{"margin-left":'50px',"margin-top":'50px'}}>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent color="#444444"></HeaderComponent>
       <div className="AppRouterDiv">
           <ul>
               <li>
