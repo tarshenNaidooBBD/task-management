@@ -1,5 +1,4 @@
 import React from 'react';
-import react from 'react'
 
 class RouteNotFound extends React.Component {
 
