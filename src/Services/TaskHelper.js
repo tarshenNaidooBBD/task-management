@@ -2,17 +2,20 @@ const homeUrl = "https://z8sp8dl9if.execute-api.eu-west-2.amazonaws.com/dev/";
 const userID = "2509";
 
 const createURL = (id) => {
-    let urlFinal = homeUrl + "{" + userID + "}/tasks";
-    if (id === "-1") {
+    let urlFinal = homeUrl + userID + "/tasks";
+    if (id === -1) {
         return urlFinal;
     } else {
-        return urlFinal + "/{" + id + "}";
+        return urlFinal + id;
     }
 }
 
 const createHttpGetRequest = (id = -1) => {
-    let httpRequest = new XMLHttpRequest();
-    httpRequest.open("GET", createURL(id), true);
+    //let httpRequest = new XMLHttpRequest();
+    //httpRequest.open("GET", , true);
+    console.log(createURL(id));
+    //fetch(createURL(id)).then(response => console.log(response))
+    console.log("Error in fetching tasks. Commented out fetch request");
 }
 const createHttpPOSTRequest = (id = -1) => {
     let httpRequest = new XMLHttpRequest();
@@ -37,12 +40,12 @@ const addSubTask = (id) => {
     createHttpPOSTRequest("POST", id);
 }
 
-const getTasks = () => {
-    createHttpGetRequest("GET");
+export const getTasks = () => {
+    createHttpGetRequest();
 }
 
 const getTask = (id) => {
-    createHttpGetRequest("GET", id);
+    createHttpGetRequest(id);
 }
 
 const modifyTask = (id, data) => {
